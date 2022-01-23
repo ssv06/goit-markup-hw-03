@@ -15,6 +15,7 @@
   --logo-color-accent: #2196f3;
   --logo-color-alt: #ffffff;
   --border-color: #ececec;
+  --team-background: #ffffff;
 }
 
 p,
@@ -34,6 +35,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -190,6 +193,12 @@ body {
   background-color: var(--highlight-color);
   cursor: pointer;
   margin: 0 auto;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
 }
 
 .her-btn:hover,
@@ -221,6 +230,7 @@ body {
 
 .principles-paragraph {
   line-height: 1.71;
+  width: 270px;
 }
 
 /*--------------Activities-------------*/
@@ -258,7 +268,7 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--second-title-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -280,12 +290,20 @@ body {
   display: flex;
 }
 
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-item + .team-item {
   margin-left: 30px;
 }
 .team-nametag {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: var(--team-background);
 }
 
 /*--------Portpholio----------*/
@@ -311,12 +329,22 @@ body {
   color: var(--btn-text);
   cursor: pointer;
   margin-left: 8px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
 }
 
 .portpholio-btn:focus,
 .portpholio-btn:hover {
   color: var(--btn-text-secondary);
   background-color: var(--highlight-color);
+}
+
+.portpholio-text {
+  color: var(--text-color);
 }
 
 /*----------products---------*/
@@ -334,8 +362,8 @@ body {
 .portpholio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30;
-  margin-bottom: -30;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 /* .portpholio-item  + .portpholio-item {
@@ -378,7 +406,7 @@ body {
 }
 
 .footer-logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-item {
