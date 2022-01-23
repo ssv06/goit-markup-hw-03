@@ -277,7 +277,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--second-title-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-paragraph {
@@ -383,7 +383,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .portpholio-text {
